@@ -1,4 +1,7 @@
 <?php
+
+namespace msajadi824\Sofort\lib;
+
 require_once(dirname(__FILE__).'/arrayToXmlException.php');
 require_once(dirname(__FILE__).'/xmlToArrayNode.php');
 require_once(dirname(__FILE__).'/elements/sofortElement.php');

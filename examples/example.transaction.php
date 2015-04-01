@@ -1,5 +1,7 @@
 <?php
 
+namespace msajadi824\Sofort\examples;
+
 require_once(dirname(__FILE__).'/../core/sofortLibNotification.inc.php');
 require_once(dirname(__FILE__).'/../core/sofortLibTransactionData.inc.php');
 

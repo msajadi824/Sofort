@@ -1,4 +1,7 @@
 <?php
+
+namespace msajadi824\Sofort;
+
 /**
  * Abstract Data Handler
  * 

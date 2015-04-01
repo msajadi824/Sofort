@@ -1,5 +1,8 @@
 <?php
-/**
+
+namespace msajadi824\Sofort\elements;
+
+	/**
  * Sofort Tag Element
  * 
  * @author SOFORT AG (integration@sofort.com)

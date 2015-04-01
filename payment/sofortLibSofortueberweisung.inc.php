@@ -1,4 +1,7 @@
 <?php
+
+namespace msajadi824\Sofort\payment;
+
 require_once(dirname(__FILE__).'../../core/sofortLibMultipay.inc.php');
 
 /**

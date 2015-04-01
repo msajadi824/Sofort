@@ -1,4 +1,7 @@
 <?php
+
+namespace msajadi824\Sofort;
+
 require_once(dirname(__FILE__).'/abstractDataHandler.php');
 require_once(dirname(__FILE__).'/lib/xmlToArray.php');
 require_once(dirname(__FILE__).'/lib/arrayToXml.php');

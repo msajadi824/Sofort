@@ -1,4 +1,7 @@
 <?php
+
+namespace msajadi824\Sofort\lib;
+
 require_once('xmlToArrayException.php');
 require_once('xmlToArrayNode.php');
 

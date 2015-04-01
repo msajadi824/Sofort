@@ -1,4 +1,7 @@
 <?php
+
+namespace msajadi824\Sofort\lib;
+
 /**
  * Array To XML Exception
  *

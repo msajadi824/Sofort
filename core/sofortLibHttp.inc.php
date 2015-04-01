@@ -1,4 +1,7 @@
 <?php
+
+namespace msajadi824\Sofort;
+
 /**
  * Encapsulates communication via HTTP
  *
