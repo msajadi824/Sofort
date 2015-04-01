@@ -1,4 +1,7 @@
 <?php
+
+namespace msajadi824\Sofort\unittests;
+
 require_once(dirname(__FILE__).'/../core/sofortLibTransactionData.inc.php');
 require_once('sofortLibTest.php');
 

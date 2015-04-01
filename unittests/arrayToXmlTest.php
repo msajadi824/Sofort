@@ -1,4 +1,7 @@
 <?php
+
+namespace msajadi824\Sofort\unittests;
+
 require_once(dirname(__FILE__).'/../core/lib/arrayToXml.php');
 
 class Unit_ArrayToXmlTest extends SofortLibTest {

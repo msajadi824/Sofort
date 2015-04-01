@@ -1,5 +1,8 @@
 <?php
 
+namespace msajadi824\Sofort\unittests;
+
+
 if(!class_exists('SofortLibTest')) {
 	abstract class SofortLibTest extends PHPUnit_Framework_TestCase {
 		
