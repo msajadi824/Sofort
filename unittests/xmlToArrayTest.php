@@ -39,8 +39,6 @@ EOD;
 		$this->assertFalse($XmlToArray->log($msg));
 		
 		if (!class_exists('Object')) {
-			require_once('SofortObject.php');
-			
 			$msg = 'test';
 			$this->assertEquals(array($msg, 2), $XmlToArray->log($msg));
 			
