@@ -1,8 +1,8 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
-use msajadi824\Sofort\AbstractDataHandler;
+use PouyaSoft_ir\Sofort\AbstractDataHandler;
 
 class Unit_AbstractDataHandlerTest extends SofortLibTest {
 

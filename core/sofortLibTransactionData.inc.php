@@ -1,6 +1,6 @@
 <?php
 
-namespace msajadi824\Sofort;
+namespace PouyaSoft_ir\Sofort;
 
 /**
  * This class is  for retrieving information about transactions,

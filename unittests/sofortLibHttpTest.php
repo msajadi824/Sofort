@@ -1,8 +1,8 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
-use msajadi824\Sofort\SofortLibHttp;
+use PouyaSoft_ir\Sofort\SofortLibHttp;
 
 class Unit_SofortLibHttpTest extends SofortLibTest {
 

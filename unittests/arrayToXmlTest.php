@@ -1,10 +1,10 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
-use msajadi824\Sofort\elements\SofortTag;
-use msajadi824\Sofort\elements\SofortText;
-use msajadi824\Sofort\lib\ArrayToXml;
+use PouyaSoft_ir\Sofort\elements\SofortTag;
+use PouyaSoft_ir\Sofort\elements\SofortText;
+use PouyaSoft_ir\Sofort\lib\ArrayToXml;
 
 class Unit_ArrayToXmlTest extends SofortLibTest {
 	

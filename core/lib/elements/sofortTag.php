@@ -1,6 +1,6 @@
 <?php
 
-namespace msajadi824\Sofort\elements;
+namespace PouyaSoft_ir\Sofort\elements;
 
 	/**
  * Sofort Tag Element

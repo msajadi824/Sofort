@@ -1,10 +1,10 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
-use msajadi824\Sofort\FileLogger;
+use PouyaSoft_ir\Sofort\FileLogger;
 
-class Unit_FileLoggerTest extends PHPUnit_Framework_TestCase {
+class Unit_FileLoggerTest extends \PHPUnit_Framework_TestCase {
 	
 	public function testConstruct() {
 		$SofortLibLogger = new FileLogger();

@@ -1,6 +1,6 @@
 <?php
 
-namespace msajadi824\Sofort\lib;
+namespace PouyaSoft_ir\Sofort\lib;
 
 /**
  * Array To XML Exception

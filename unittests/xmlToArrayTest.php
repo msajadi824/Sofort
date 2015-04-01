@@ -1,10 +1,10 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
-use msajadi824\Sofort\lib\XmlToArray;
-use msajadi824\Sofort\lib\XmlToArrayException;
-use msajadi824\Sofort\lib\XmlToArrayNode;
+use PouyaSoft_ir\Sofort\lib\XmlToArray;
+use PouyaSoft_ir\Sofort\lib\XmlToArrayException;
+use PouyaSoft_ir\Sofort\lib\XmlToArrayNode;
 
 class Unit_XmlToArrayTest extends SofortLibTest {
 	

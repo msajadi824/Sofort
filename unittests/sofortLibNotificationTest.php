@@ -1,8 +1,8 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
-use msajadi824\Sofort\SofortLibNotification;
+use PouyaSoft_ir\Sofort\SofortLibNotification;
 
 class Unit_SofortLibNotificationTest extends SofortLibTest {
 	

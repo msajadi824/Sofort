@@ -1,6 +1,6 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
 
 require_once(dirname(__FILE__).'/../core/abstractLoggerHandler.php');

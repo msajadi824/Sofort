@@ -1,9 +1,9 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
-use msajadi824\Sofort\payment\Sofortueberweisung;
-use msajadi824\Sofort\XmlDataHandler;
+use PouyaSoft_ir\Sofort\payment\Sofortueberweisung;
+use PouyaSoft_ir\Sofort\XmlDataHandler;
 
 class Unit_SofortLibSofortueberweisungTest extends SofortLibTest {
 

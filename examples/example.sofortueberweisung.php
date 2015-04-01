@@ -1,8 +1,8 @@
 <?php
 
-namespace msajadi824\Sofort\examples;
+namespace PouyaSoft_ir\Sofort\examples;
 
-use msajadi824\Sofort\payment\Sofortueberweisung;
+use PouyaSoft_ir\Sofort\payment\Sofortueberweisung;
 
 // enter your configuration key – you only can create a new configuration key by creating
 // a new Gateway project in your account at sofort.com

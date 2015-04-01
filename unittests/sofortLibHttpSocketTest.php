@@ -1,8 +1,8 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
-use msajadi824\Sofort\SofortLibHttpSocket;
+use PouyaSoft_ir\Sofort\SofortLibHttpSocket;
 
 if(!defined('SOFORTLIB_VERSION')) {
 	define('SOFORTLIB_VERSION', '2.1.1');

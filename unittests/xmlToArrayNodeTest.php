@@ -1,8 +1,8 @@
 <?php
 
-namespace msajadi824\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\unittests;
 
-use msajadi824\Sofort\lib\XmlToArrayNode;
+use PouyaSoft_ir\Sofort\lib\XmlToArrayNode;
 
 class Unit_XmlToArrayNodeTest extends SofortLibTest {
 
