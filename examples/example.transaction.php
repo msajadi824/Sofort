@@ -2,8 +2,8 @@
 
 namespace msajadi824\Sofort\examples;
 
-require_once(dirname(__FILE__).'/../core/sofortLibNotification.inc.php');
-require_once(dirname(__FILE__).'/../core/sofortLibTransactionData.inc.php');
+use msajadi824\Sofort\SofortLibNotification;
+use msajadi824\Sofort\SofortLibTransactionData;
 
 // enter your configuration key – you only can create a new configuration key by creating
 // a new Gateway project in your account at sofort.com

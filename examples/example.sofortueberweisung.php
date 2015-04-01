@@ -2,7 +2,7 @@
 
 namespace msajadi824\Sofort\examples;
 
-require_once(dirname(__FILE__).'/../payment/sofortLibSofortueberweisung.inc.php');
+use msajadi824\Sofort\payment\Sofortueberweisung;
 
 // enter your configuration key – you only can create a new configuration key by creating
 // a new Gateway project in your account at sofort.com

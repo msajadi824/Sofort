@@ -2,7 +2,7 @@
 
 namespace msajadi824\Sofort\payment;
 
-require_once(dirname(__FILE__).'../../core/sofortLibMultipay.inc.php');
+use msajadi824\Sofort\SofortLibMultipay;
 
 /**
  *
@@ -23,7 +23,7 @@ class Sofortueberweisung extends SofortLibMultipay {
 	 * Constructor for Sofortueberweisung
 	 *
 	 * @param string $configKey
-	 * @return \Sofortueberweisung
+	 * @return Sofortueberweisung
 	 */
 	public function __construct($configKey) {
 		parent::__construct($configKey);

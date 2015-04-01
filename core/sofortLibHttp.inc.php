@@ -118,7 +118,7 @@ class SofortLibHttp {
 	 * @param string $url
 	 * @param bool $compression (default false)
 	 * @param string $proxy (optional)
-	 * @return \SofortLibHttp
+	 * @return SofortLibHttp
 	 */
 	public function __construct($url, $compression = false, $proxy = '') {
 		$this->url = $url;

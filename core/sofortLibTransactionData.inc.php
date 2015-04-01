@@ -2,8 +2,6 @@
 
 namespace msajadi824\Sofort;
 
-require_once(dirname(__FILE__).'/sofortLibAbstract.inc.php');
-
 /**
  * This class is  for retrieving information about transactions,
  * you can search by transaction-id or by date
@@ -498,7 +496,7 @@ class SofortLibTransactionData extends SofortLibAbstract {
 	 * Setter for transaction-counter
 	 *
 	 * @param int $count
-	 * @return SofortTransactionData $this
+	 * @return SofortLibTransactionData $this
 	 */
 	public function setCount($count) {
 		$this->_count = $count;
@@ -526,7 +524,7 @@ class SofortLibTransactionData extends SofortLibAbstract {
 	 * Request for transactions with certain status
 	 *
 	 * @param string $status (loss|pending|received|refunded|untraceable)
-	 * @return SofortTransactionData
+	 * @return SofortLibTransactionData
 	 */
 	public function setStatus($status) {
 		$this->_parameters['status'] = $status;
@@ -540,7 +538,7 @@ class SofortLibTransactionData extends SofortLibAbstract {
 	 *
 	 * @param string $from possible formats: 2011-01-25 or 2011-01-25T19:01:02+02:00
 	 * @param string $to possible formats: 2011-01-25 or 2011-01-25T19:01:02+02:00
-	 * @return SofortTransactionData
+	 * @return SofortLibTransactionData
 	 */
 	public function setStatusModifiedTime($from, $to) {
 		$this->_parameters['from_status_modified_time'] = $from;
@@ -557,7 +555,7 @@ class SofortLibTransactionData extends SofortLibAbstract {
 	 * 								credited|canceled|confirm_invoice|confirmation_period_expired|
 	 * 								wait_for_money|partially_credited|overpayment|rejected|sofort_bank_account_needed|
 	prefinanced|acquired|late_succeed)
-	 * @return SofortTransactionData
+	 * @return SofortLibTransactionData
 	 */
 	public function setStatusReason($statusReason) {
 		$this->_parameters['status_reason'] = $statusReason;

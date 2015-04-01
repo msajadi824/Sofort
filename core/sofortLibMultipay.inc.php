@@ -2,8 +2,6 @@
 
 namespace msajadi824\Sofort;
 
-require_once(dirname(__FILE__).'/sofortLibAbstract.inc.php');
-
 /**
  * Abstract Multipay Class
  * 

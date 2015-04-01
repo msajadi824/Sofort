@@ -3,11 +3,6 @@
 namespace msajadi824\Sofort;
 
 /**
- * @file
- */
-require_once(dirname(__FILE__).'/sofortLibFactory.php');
-
-/**
  * SofortLibPHP version - Constant
  */
 define('SOFORTLIB_VERSION', '2.1.2');

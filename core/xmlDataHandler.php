@@ -2,9 +2,8 @@
 
 namespace msajadi824\Sofort;
 
-require_once(dirname(__FILE__).'/abstractDataHandler.php');
-require_once(dirname(__FILE__).'/lib/xmlToArray.php');
-require_once(dirname(__FILE__).'/lib/arrayToXml.php');
+use msajadi824\Sofort\lib\ArrayToXml;
+use msajadi824\Sofort\lib\XmlToArray;
 
 /**
  * Handler for XML Data
@@ -26,7 +25,7 @@ class XmlDataHandler extends AbstractDataHandler {
 	 * Should be moved to somewhere else (where it fits better)
 	 *
 	 * @param string $configKey
-	 * @return \XmlDataHandler
+	 * @return XmlDataHandler
 	 */
 	public function __construct($configKey) {
 		parent::__construct($configKey);
@@ -56,7 +55,7 @@ class XmlDataHandler extends AbstractDataHandler {
  		} else {
 			try {
 				$this->_response = XmlToArray::render($xmlResponse);
-			} catch (Exception $e) {
+			} catch (\Exception $e) {
 				$this->_response = array(
 					'errors' => array(
 						'error' => array(

@@ -65,7 +65,7 @@ class XmlToArrayNode {
 	 *
 	 * @param string $name
 	 * @param array|bool $attributes
-	 * @return \XmlToArrayNode
+	 * @return XmlToArrayNode
 	 */
 	public function __construct($name, $attributes) {
 		$this->_name = $name;

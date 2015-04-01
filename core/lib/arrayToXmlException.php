@@ -16,4 +16,4 @@ namespace msajadi824\Sofort\lib;
  *
  * @link http://www.sofort.com/ official website
  */
-class ArrayToXmlException extends Exception {}
+class ArrayToXmlException extends \Exception {}

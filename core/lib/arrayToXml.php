@@ -2,11 +2,8 @@
 
 namespace msajadi824\Sofort\lib;
 
-require_once(dirname(__FILE__).'/arrayToXmlException.php');
-require_once(dirname(__FILE__).'/xmlToArrayNode.php');
-require_once(dirname(__FILE__).'/elements/sofortElement.php');
-require_once(dirname(__FILE__).'/elements/sofortTag.php');
-require_once(dirname(__FILE__).'/elements/sofortText.php');
+use msajadi824\Sofort\elements\SofortTag;
+use msajadi824\Sofort\elements\SofortText;
 
 /**
  * Array To XML conversion
@@ -46,7 +43,7 @@ class ArrayToXml {
 	 * @param int $maxDepth (default 10)
 	 * @param bool $trim (default true)
 	 * @throws ArrayToXmlException
-	 * @return \ArrayToXml
+	 * @return ArrayToXml
 	 */
 	public function __construct(array $input, $maxDepth = 10, $trim = true) {
 		if ($maxDepth > 50) {

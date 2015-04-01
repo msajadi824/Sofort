@@ -2,8 +2,6 @@
 
 namespace msajadi824\Sofort;
 
-require_once(dirname(__FILE__).'/abstractLoggerHandler.php');
-
 /**
  * File logger
  * 

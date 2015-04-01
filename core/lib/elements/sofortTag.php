@@ -37,7 +37,7 @@ class SofortTag extends SofortElement {
 	 * @param string $tagname
 	 * @param array $attributes (optional)
 	 * @param array $children (optional)
-	 * @return \SofortTag
+	 * @return SofortTag
 	 */
 	public function __construct($tagname, array $attributes = array(), $children = array()) {
 		$this->tagname = $tagname;

@@ -35,7 +35,7 @@ class SofortText extends SofortElement {
 	 * @param string $text
 	 * @param bool $escape (default false)
 	 * @param bool $trim (default true)
-	 * @return \SofortText
+	 * @return SofortText
 	 */
 	public function __construct($text, $escape = false, $trim = true) {
 		$this->text = $trim ? trim($text) : $text;

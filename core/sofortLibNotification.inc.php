@@ -2,7 +2,7 @@
 
 namespace msajadi824\Sofort;
 
-require_once(dirname(__FILE__).'/lib/xmlToArray.php');
+use msajadi824\Sofort\lib\XmlToArray;
 
 /**
  * This class handles incoming notifications for sofortueberweisung and invoice
@@ -30,7 +30,7 @@ class SofortLibNotification {
 	/**
 	 * Container for the returned timestamp
 	 *
-	 * @var Datetime
+	 * @var \DateTime
 	 */
 	private $_time;
 	
@@ -50,7 +50,7 @@ class SofortLibNotification {
 	public function getNotification($content) {
 		try {
 			$response = XmlToArray::render($content);
-		} catch (Exception $e) {
+		} catch (\Exception $e) {
 			$this->errors['error']['message'] = 'could not parse message';
 			
 			return false;

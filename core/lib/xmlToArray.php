@@ -2,9 +2,6 @@
 
 namespace msajadi824\Sofort\lib;
 
-require_once('xmlToArrayException.php');
-require_once('xmlToArrayNode.php');
-
 /**
  * XML To Array conversion
  *
@@ -66,7 +63,7 @@ class XmlToArray {
 	 * @param string $input
 	 * @param int $maxDepth (default 20)
 	 * @throws XmlToArrayException
-	 * @return \XmlToArray
+	 * @return XmlToArray
 	 */
 	public function __construct($input, $maxDepth = 20) {
 		if (!is_string($input)) throw new XmlToArrayException('No valid input.');
@@ -104,7 +101,7 @@ class XmlToArray {
 	 */
 	public function log($msg, $type = 2) {
 		if (class_exists('Object')) {
-			!($this->_Object instanceof Object) && $this->_Object = new Object();
+			!($this->_Object instanceof \Object) && $this->_Object = new \Object();
 			
 			return $this->_Object->log($msg, $type);
 		}

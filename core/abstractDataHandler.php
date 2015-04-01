@@ -96,7 +96,7 @@ abstract class AbstractDataHandler {
 	 * Constructor for AbstractDataHandler
 	 *
 	 * @param string $configKey
-	 * @return \AbstractDataHandler
+	 * @return AbstractDataHandler
 	 */
 	public function __construct($configKey) {
 		$this->setConfigKey($configKey);
