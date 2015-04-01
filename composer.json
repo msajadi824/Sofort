@@ -1,7 +1,7 @@
 {
   "name": "pouyasoft_ir/sofort",
   "type": "library",
-  "description": "sofort 2.1.2 payment PHP library",
+  "description": "sofort payment PHP library",
   "keywords": ["sofort"],
   "homepage": "https://github.com/msajadi824/Sofort",
   "license": "MIT",
