@@ -2,7 +2,9 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../core/lib/arrayToXml.php');
+use msajadi824\Sofort\elements\SofortTag;
+use msajadi824\Sofort\elements\SofortText;
+use msajadi824\Sofort\lib\ArrayToXml;
 
 class Unit_ArrayToXmlTest extends SofortLibTest {
 	

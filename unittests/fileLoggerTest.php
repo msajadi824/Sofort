@@ -2,12 +2,12 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../core/fileLogger.php');
+use msajadi824\Sofort\FileLogger;
 
 class Unit_FileLoggerTest extends PHPUnit_Framework_TestCase {
 	
 	public function testConstruct() {
-		$SofortLibLogger = new fileLogger();
+		$SofortLibLogger = new FileLogger();
 		$this->assertAttributeEquals(
 			realpath(dirname(__FILE__).'/../core').'/logs/log.txt', '_logfilePath', $SofortLibLogger
 		);

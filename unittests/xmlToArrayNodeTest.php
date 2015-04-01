@@ -2,7 +2,7 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../core/lib/xmlToArray.php');
+use msajadi824\Sofort\lib\XmlToArrayNode;
 
 class Unit_XmlToArrayNodeTest extends SofortLibTest {
 

@@ -2,15 +2,14 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../core/sofortLibHttpSocket.inc.php');
-require_once('sofortLibTest.php');
+use msajadi824\Sofort\SofortLibHttpSocket;
 
 if(!defined('SOFORTLIB_VERSION')) {
 	define('SOFORTLIB_VERSION', '2.1.1');
 }
 
 class Unit_SofortLibHttpSocketTest extends SofortLibTest {
-	
+
 	protected $_mockPayload ='<?xml version="1.0" encoding="UTF-8" ?>
 <invoices><invoice><transaction>00907-01222-4F86CFEA-7F0B</transaction><status>ERROR</status><errors><error><code>9000</code><message>No invoice transaction found.</message></error></errors></invoice><invoice><transaction>00907-01222-4F86CE5D-B216</transaction><status>ERROR</status><errors><error><code>9000</code><message>No invoice transaction found.</message></error></errors></invoice></invoices>';
 	

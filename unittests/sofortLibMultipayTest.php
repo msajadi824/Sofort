@@ -2,8 +2,7 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../core/sofortLibMultipay.inc.php');
-require_once('sofortLibTest.php');
+use msajadi824\Sofort\SofortLibMultipay;
 
 /**
  * Class constructed just to test the methods of the abstract class

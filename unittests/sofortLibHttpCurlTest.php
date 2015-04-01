@@ -2,10 +2,10 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../core/sofortLibHttpCurl.inc.php');
+use msajadi824\Sofort\SofortLibHttpCurl;
 
 class Unit_SofortLibHttpCurlTest extends SofortLibTest {
-	
+
 	public function testPost () {
 		$MockPost = $this->getMock(
 			'SofortLibHttpCurl',

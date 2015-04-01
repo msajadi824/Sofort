@@ -2,8 +2,7 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../core/sofortLibNotification.inc.php');
-require_once('sofortLibTest.php');
+use msajadi824\Sofort\SofortLibNotification;
 
 class Unit_SofortLibNotificationTest extends SofortLibTest {
 	

@@ -2,7 +2,9 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../core/lib/xmlToArray.php');
+use msajadi824\Sofort\lib\XmlToArray;
+use msajadi824\Sofort\lib\XmlToArrayException;
+use msajadi824\Sofort\lib\XmlToArrayNode;
 
 class Unit_XmlToArrayTest extends SofortLibTest {
 	
@@ -108,7 +110,7 @@ EOD;
 		
 		try {
 			$default->invoke($XmlToArray, 'test', 'test');
-		} catch (Exception $expected) {
+		} catch (\Exception $expected) {
 			return;
 		}
 		
@@ -128,7 +130,7 @@ EOD;
 		
 		try {
 			$end->invoke($XmlToArray, $XMLParser, 'test1');
-		} catch (Exception $expected) {
+		} catch (\Exception $expected) {
 			return;
 		}
 		

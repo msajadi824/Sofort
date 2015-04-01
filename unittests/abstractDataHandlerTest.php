@@ -2,11 +2,10 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../core/abstractDataHandler.php');
-require_once('sofortLibTest.php');
+use msajadi824\Sofort\AbstractDataHandler;
 
 class Unit_AbstractDataHandlerTest extends SofortLibTest {
-	
+
 	protected $_classToTest = 'AbstractDataHandler';
 	
 	public function providerGetApiKey() {

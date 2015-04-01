@@ -2,8 +2,8 @@
 
 namespace msajadi824\Sofort\unittests;
 
-require_once(dirname(__FILE__).'/../payment/sofortLibSofortueberweisung.inc.php');
-require_once('sofortLibTest.php');
+use msajadi824\Sofort\payment\Sofortueberweisung;
+use msajadi824\Sofort\XmlDataHandler;
 
 class Unit_SofortLibSofortueberweisungTest extends SofortLibTest {
 
