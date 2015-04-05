@@ -1,9 +1,9 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort;
+namespace PouyaSoft_ir\Sofort\Core;
 
-use PouyaSoft_ir\Sofort\lib\ArrayToXml;
-use PouyaSoft_ir\Sofort\lib\XmlToArray;
+use PouyaSoft_ir\Sofort\Core\lib\ArrayToXml;
+use PouyaSoft_ir\Sofort\Core\lib\XmlToArray;
 
 /**
  * Handler for XML Data

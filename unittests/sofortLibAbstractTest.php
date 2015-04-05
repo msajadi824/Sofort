@@ -2,15 +2,9 @@
 
 namespace PouyaSoft_ir\Sofort\unittests;
 
-use PouyaSoft_ir\Sofort\SofortLibAbstract;
+use PouyaSoft_ir\Sofort\Core\SofortLibAbstract;
 
-/**
- * Class constructed just to test the methods of the abstract class
- * @author mm
- */
-class SofortLibAbstractMock extends SofortLibAbstract {}
-
-class Unit_SofortLibAbstractTest extends SofortLibTest {
+class SofortLibAbstractTest extends SofortLibTest {
 
 	protected $_classToTest = 'SofortLibAbstractMock';
 	
@@ -116,7 +110,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	
 	public function testGetData() {
-		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
+		$SofortLibAbstractMock = new \SofortLibAbstractMock(self::$configkey);
 		$rootTag = self::_getProperty('_rootTag', $this->_classToTest);
 		$rootTag->setValue($SofortLibAbstractMock, 'multipay');
 		$SofortLibAbstractMock->setParameters(array('test'));
@@ -128,7 +122,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	
 	public function testGetDataHandler() {
-		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
+		$SofortLibAbstractMock = new \SofortLibAbstractMock(self::$configkey);
 		$AbstractDataHandler = $this->getMockForAbstractClass('AbstractDataHandler', array(), '', FALSE);
 		$SofortLibAbstractMock->setDataHandler($AbstractDataHandler);
 		$this->assertEquals($AbstractDataHandler, $SofortLibAbstractMock->getDataHandler());
@@ -149,7 +143,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	
 	public function testGetParameters() {
-		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
+		$SofortLibAbstractMock = new \SofortLibAbstractMock(self::$configkey);
 		$expected = array('test', 'test2');
 		$SofortLibAbstractMock->setParameters($test_array = array('test', 'test2'));
 		$this->assertEquals($expected, $SofortLibAbstractMock->getParameters());
@@ -281,7 +275,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	
 	public function testAbstractSofortLib() {
-		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
+		$SofortLibAbstractMock = new \SofortLibAbstractMock(self::$configkey);
 		
 		$SofortLibAbstractMock->setParameters(array(array('miep' => 'moep')));
 		$this->assertEquals(array(array('miep' => 'moep')), $SofortLibAbstractMock->getParameters());
@@ -295,7 +289,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	 * @dataProvider providerIsWarning
 	 */
 	public function testIsWarning ($provided, $expected) {
-		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
+		$SofortLibAbstractMock = new \SofortLibAbstractMock(self::$configkey);
 		$SofortLibAbstractMock->warnings = $expected;
 		
 		if(isset($provided[1]) && in_array($provided[1], array('global', 'su', 'sr', 'not'))) {

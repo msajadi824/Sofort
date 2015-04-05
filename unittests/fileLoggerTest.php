@@ -2,9 +2,9 @@
 
 namespace PouyaSoft_ir\Sofort\unittests;
 
-use PouyaSoft_ir\Sofort\FileLogger;
+use PouyaSoft_ir\Sofort\Core\FileLogger;
 
-class Unit_FileLoggerTest extends \PHPUnit_Framework_TestCase {
+class FileLoggerTest extends \PHPUnit_Framework_TestCase {
 	
 	public function testConstruct() {
 		$SofortLibLogger = new FileLogger();

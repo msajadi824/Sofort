@@ -1,6 +1,6 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\lib;
+namespace PouyaSoft_ir\Sofort\Core\lib;
 
 /**
  * XML To Array conversion

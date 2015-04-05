@@ -5,7 +5,7 @@ namespace PouyaSoft_ir\Sofort\unittests;
 use PouyaSoft_ir\Sofort\payment\Sofortueberweisung;
 use PouyaSoft_ir\Sofort\XmlDataHandler;
 
-class Unit_SofortLibSofortueberweisungTest extends SofortLibTest {
+class SofortLibSofortueberweisungTest extends SofortLibTest {
 
 	protected $_classToTest = 'Sofortueberweisung';
 	

@@ -2,16 +2,9 @@
 
 namespace PouyaSoft_ir\Sofort\unittests;
 
-use PouyaSoft_ir\Sofort\SofortLibMultipay;
+use PouyaSoft_ir\Sofort\Core\SofortLibMultipay;
 
-/**
- * Class constructed just to test the methods of the abstract class
- * @author mm
- *
- */
-class SofortLibMultipayMock extends SofortLibMultipay {}
-
-class Unit_SofortLibMultipayTest extends SofortLibTest {
+class SofortLibMultipayTest extends SofortLibTest {
 
 	protected $_classToTest = 'SofortLibMultipayMock';
 	

@@ -2,11 +2,11 @@
 
 namespace PouyaSoft_ir\Sofort\unittests;
 
-use PouyaSoft_ir\Sofort\lib\XmlToArray;
-use PouyaSoft_ir\Sofort\lib\XmlToArrayException;
-use PouyaSoft_ir\Sofort\lib\XmlToArrayNode;
+use PouyaSoft_ir\Sofort\Core\lib\XmlToArray;
+use PouyaSoft_ir\Sofort\Core\lib\XmlToArrayException;
+use PouyaSoft_ir\Sofort\Core\lib\XmlToArrayNode;
 
-class Unit_XmlToArrayTest extends SofortLibTest {
+class XmlToArrayTest extends SofortLibTest {
 	
 	protected $_classToTest = 'XmlToArray';
 	
@@ -18,8 +18,8 @@ class Unit_XmlToArrayTest extends SofortLibTest {
    <billcode>test</billcode>
 </billcode_request>
 EOD;
-	
-	
+
+
 	public function testConstructNoValidInputException () {
 		$this->setExpectedException('XmlToArrayException');
 		$XmlToArray = new XmlToArray(12);

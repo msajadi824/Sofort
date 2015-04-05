@@ -2,9 +2,9 @@
 
 namespace PouyaSoft_ir\Sofort\unittests;
 
-use PouyaSoft_ir\Sofort\lib\XmlToArrayNode;
+use PouyaSoft_ir\Sofort\Core\lib\XmlToArrayNode;
 
-class Unit_XmlToArrayNodeTest extends SofortLibTest {
+class XmlToArrayNodeTest extends SofortLibTest {
 
 	protected $_classToTest = 'XmlToArrayNode';
 	

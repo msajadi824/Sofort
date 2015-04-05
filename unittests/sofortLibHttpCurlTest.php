@@ -2,9 +2,9 @@
 
 namespace PouyaSoft_ir\Sofort\unittests;
 
-use PouyaSoft_ir\Sofort\SofortLibHttpCurl;
+use PouyaSoft_ir\Sofort\Core\SofortLibHttpCurl;
 
-class Unit_SofortLibHttpCurlTest extends SofortLibTest {
+class SofortLibHttpCurlTest extends SofortLibTest {
 
 	public function testPost () {
 		$MockPost = $this->getMock(

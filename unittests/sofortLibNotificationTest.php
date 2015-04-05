@@ -2,9 +2,9 @@
 
 namespace PouyaSoft_ir\Sofort\unittests;
 
-use PouyaSoft_ir\Sofort\SofortLibNotification;
+use PouyaSoft_ir\Sofort\Core\SofortLibNotification;
 
-class Unit_SofortLibNotificationTest extends SofortLibTest {
+class SofortLibNotificationTest extends SofortLibTest {
 	
 	protected $_classToTest = 'SofortLibNotification';
 	

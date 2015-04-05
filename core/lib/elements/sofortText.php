@@ -1,6 +1,6 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\elements;
+namespace PouyaSoft_ir\Sofort\Core\elements;
 
 	/**
  * Sofort Text Element

@@ -2,9 +2,9 @@
 
 namespace PouyaSoft_ir\Sofort\unittests;
 
-use PouyaSoft_ir\Sofort\SofortLibHttp;
+use PouyaSoft_ir\Sofort\Core\SofortLibHttp;
 
-class Unit_SofortLibHttpTest extends SofortLibTest {
+class SofortLibHttpTest extends SofortLibTest {
 
 	
 	protected $_classToTest = 'SofortLibHttp';

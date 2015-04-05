@@ -1,6 +1,6 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort;
+namespace PouyaSoft_ir\Sofort\Core;
 
 /**
  * This class is  for retrieving information about transactions,

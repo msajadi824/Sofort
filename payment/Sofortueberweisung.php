@@ -2,7 +2,7 @@
 
 namespace PouyaSoft_ir\Sofort\payment;
 
-use PouyaSoft_ir\Sofort\SofortLibMultipay;
+use PouyaSoft_ir\Sofort\Core\SofortLibMultipay;
 
 /**
  *

@@ -2,13 +2,13 @@
 
 namespace PouyaSoft_ir\Sofort\unittests;
 
-use PouyaSoft_ir\Sofort\elements\SofortTag;
-use PouyaSoft_ir\Sofort\elements\SofortText;
-use PouyaSoft_ir\Sofort\lib\ArrayToXml;
+use PouyaSoft_ir\Sofort\Core\elements\SofortTag;
+use PouyaSoft_ir\Sofort\Core\elements\SofortText;
+use PouyaSoft_ir\Sofort\Core\lib\ArrayToXml;
 
-class Unit_ArrayToXmlTest extends SofortLibTest {
+class ArrayToXmlTest extends SofortLibTest {
 	
-	protected $_classToTest = 'ArrayToXml';
+	protected $_classToTest = 'PouyaSoft_ir\Sofort\Core\lib\ArrayToXml';
 	
 	public function testCheckDepth () {
 		$this->setExpectedException('ArrayToXmlException');
