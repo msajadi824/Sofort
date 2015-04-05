@@ -2,8 +2,8 @@
 
 namespace PouyaSoft_ir\Sofort\examples;
 
-use PouyaSoft_ir\Sofort\SofortLibNotification;
-use PouyaSoft_ir\Sofort\SofortLibTransactionData;
+use PouyaSoft_ir\Sofort\Core\SofortLibNotification;
+use PouyaSoft_ir\Sofort\Core\SofortLibTransactionData;
 
 // enter your configuration key – you only can create a new configuration key by creating
 // a new Gateway project in your account at sofort.com

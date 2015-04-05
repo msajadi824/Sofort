@@ -1,6 +1,6 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\lib;
+namespace PouyaSoft_ir\Sofort\Core\Lib;
 
 /**
  * XML To Array Node
@@ -28,7 +28,7 @@ class XmlToArrayNode {
 	/**
 	 * Children
 	 * 
-	 * @var array
+	 * @var XmlToArrayNode[]
 	 */
 	private $_children = array();
 	
@@ -209,7 +209,7 @@ class XmlToArrayNode {
 	/**
 	 * Counts the Children of an array and returns them in an associative array
 	 *
-	 * @param array $Children
+	 * @param XmlToArrayNode[] $Children
 	 * @return array
 	 */
 	private function _countChildren ($Children) {
@@ -221,14 +221,15 @@ class XmlToArrayNode {
 		
 		return $multiples;
 	}
-	
-	
+
+
 	/**
 	 * Renders a single node
 	 *
-	 * @param string $Child
+	 * @param XmlToArrayNode $Child
 	 * @param bool $simpleStructureChildHasNoChildren
 	 * @param bool $simpleStructure
+	 * @return array
 	 */
 	private function _renderNode($Child, $simpleStructureChildHasNoChildren, $simpleStructure) {
 		return ($simpleStructureChildHasNoChildren) ? $Child->getData() : $Child->render($simpleStructure);

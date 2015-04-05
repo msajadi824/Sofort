@@ -1,9 +1,9 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\lib;
+namespace PouyaSoft_ir\Sofort\Core\Lib;
 
-use PouyaSoft_ir\Sofort\elements\SofortTag;
-use PouyaSoft_ir\Sofort\elements\SofortText;
+use PouyaSoft_ir\Sofort\Core\Lib\Elements\SofortTag;
+use PouyaSoft_ir\Sofort\Core\Lib\Elements\SofortText;
 
 /**
  * Array To XML conversion

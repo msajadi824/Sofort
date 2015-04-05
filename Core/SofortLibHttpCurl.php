@@ -1,6 +1,6 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort;
+namespace PouyaSoft_ir\Sofort\Core;
 
 /**
  * this class handles requests using the curl method

@@ -1,8 +1,8 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort;
+namespace PouyaSoft_ir\Sofort\Core;
 
-use PouyaSoft_ir\Sofort\lib\XmlToArray;
+use PouyaSoft_ir\Sofort\Core\Lib\XmlToArray;
 
 /**
  * This class handles incoming notifications for sofortueberweisung and invoice

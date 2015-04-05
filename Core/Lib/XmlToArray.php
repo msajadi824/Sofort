@@ -1,6 +1,8 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\lib;
+namespace PouyaSoft_ir\Sofort\Core\Lib;
+
+use PouyaSoft_ir\Sofort\UnitTests\SofortObject;
 
 /**
  * XML To Array conversion
@@ -21,7 +23,7 @@ class XmlToArray {
 	/**
 	 * Reference to the current node the parser is at
 	 *
-	 * @var $_CurrentXmlToArrayNode
+	 * @var XmlToArrayNode $_CurrentXmlToArrayNode
 	 */
 	private $_CurrentXmlToArrayNode = null;
 
@@ -101,7 +103,7 @@ class XmlToArray {
 	 */
 	public function log($msg, $type = 2) {
 		if (class_exists('Object')) {
-			!($this->_Object instanceof \Object) && $this->_Object = new \Object();
+			!($this->_Object instanceof SofortObject) && $this->_Object = new SofortObject();
 			
 			return $this->_Object->log($msg, $type);
 		}

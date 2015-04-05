@@ -1,8 +1,8 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\payment;
+namespace PouyaSoft_ir\Sofort\Payment;
 
-use PouyaSoft_ir\Sofort\SofortLibMultipay;
+use PouyaSoft_ir\Sofort\Core\SofortLibMultipay;
 
 /**
  *
