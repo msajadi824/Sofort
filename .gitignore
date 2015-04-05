@@ -3,3 +3,4 @@
 /vendor/
 Core/logs/
 !Core/logs/.gitkeep
+/report/
