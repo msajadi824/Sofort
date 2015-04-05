@@ -1,12 +1,10 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
-use PouyaSoft_ir\Sofort\AbstractDataHandler;
+class AbstractDataHandlerTest extends SofortLibTest {
 
-class Unit_AbstractDataHandlerTest extends SofortLibTest {
-
-	protected $_classToTest = 'AbstractDataHandler';
+	protected $_classToTest = 'PouyaSoft_ir\Sofort\Core\AbstractDataHandler';
 	
 	public function providerGetApiKey() {
 		return array(

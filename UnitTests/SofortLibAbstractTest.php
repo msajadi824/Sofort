@@ -1,18 +1,10 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
-use PouyaSoft_ir\Sofort\SofortLibAbstract;
+class SofortLibAbstractTest extends SofortLibTest {
 
-/**
- * Class constructed just to test the methods of the abstract class
- * @author mm
- */
-class SofortLibAbstractMock extends SofortLibAbstract {}
-
-class Unit_SofortLibAbstractTest extends SofortLibTest {
-
-	protected $_classToTest = 'SofortLibAbstractMock';
+	protected $_classToTest = 'PouyaSoft_ir\Sofort\UnitTests\SofortLibAbstractMock';
 	
 	private $_handledErrors = array(
 		'global' => array(
@@ -129,7 +121,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	public function testGetDataHandler() {
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
-		$AbstractDataHandler = $this->getMockForAbstractClass('AbstractDataHandler', array(), '', FALSE);
+		$AbstractDataHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\AbstractDataHandler', array(), '', FALSE);
 		$SofortLibAbstractMock->setDataHandler($AbstractDataHandler);
 		$this->assertEquals($AbstractDataHandler, $SofortLibAbstractMock->getDataHandler());
 	}
@@ -363,7 +355,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	public function testGetLogger() {
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
-		$FileLoggerHandler = $this->getMockForAbstractClass('fileLogger');
+		$FileLoggerHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\FileLogger');
 		$SofortLibAbstractMock->setLogger($FileLoggerHandler);
 		$this->assertEquals($SofortLibAbstractMock->getLogger(), $FileLoggerHandler);
 	}
@@ -371,7 +363,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	public function testGetRawRequest() {
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
-		$AbstractDataHandler = $this->getMockForAbstractClass('AbstractDataHandler',
+		$AbstractDataHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\AbstractDataHandler',
 				array(),
 				'',
 				FALSE,
@@ -387,7 +379,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	public function testGetRawResponse() {
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
-		$AbstractDataHandler = $this->getMockForAbstractClass('AbstractDataHandler',
+		$AbstractDataHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\AbstractDataHandler',
 				array(),
 				'',
 				FALSE,
@@ -419,7 +411,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	public function testLog() {
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
-		$FileLoggerHandler = $this->getMockForAbstractClass('fileLogger');
+		$FileLoggerHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\FileLogger');
 		$FileLoggerHandler->expects($this->any())->method('log')->with('log')->will($this->returnValue('log'));
 		
 		$SofortLibAbstractMock->setLogger($FileLoggerHandler);
@@ -430,7 +422,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	public function testLogError() {
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
-		$FileLoggerHandler = $this->getMockForAbstractClass('fileLogger');
+		$FileLoggerHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\FileLogger');
 		$FileLoggerHandler->expects($this->any())->method('log')->with('error')->will($this->returnValue('error'));
 		
 		$SofortLibAbstractMock->setLogger($FileLoggerHandler);
@@ -442,7 +434,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	public function testLogWarning() {
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
 		
-		$FileLoggerHandler = $this->getMockForAbstractClass('fileLogger');
+		$FileLoggerHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\FileLogger');
 		$FileLoggerHandler->expects($this->any())->method('log')->with('warning')->will($this->returnValue('warning'));
 		
 		$SofortLibAbstractMock->setLogger($FileLoggerHandler);
@@ -454,7 +446,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	public function testSendRequest () {
 		$validate_only = self::_getProperty('_validateOnly', $this->_classToTest);
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
-		$AbstractDataHandler = $this->getMockForAbstractClass('AbstractDataHandler',
+		$AbstractDataHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\AbstractDataHandler',
 				array(),
 				'',
 				FALSE,
@@ -510,7 +502,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	public function testSetDataHandler() {
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
-		$AbstractDataHandler = $this->getMockForAbstractClass('AbstractDataHandler', array(), '', FALSE);
+		$AbstractDataHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\AbstractDataHandler', array(), '', FALSE);
 		$SofortLibAbstractMock->setDataHandler($AbstractDataHandler);
 		$this->assertEquals($AbstractDataHandler, $SofortLibAbstractMock->getDataHandler());
 	}
@@ -563,7 +555,7 @@ class Unit_SofortLibAbstractTest extends SofortLibTest {
 	
 	public function testSetLogger() {
 		$SofortLibAbstractMock = new SofortLibAbstractMock(self::$configkey);
-		$AbstractLoggerHandler = $this->getMockForAbstractClass('AbstractLoggerHandler');
+		$AbstractLoggerHandler = $this->getMockForAbstractClass('PouyaSoft_ir\Sofort\Core\AbstractLoggerHandler');
 		$SofortLibAbstractMock->setLogger($AbstractLoggerHandler);
 		$this->assertAttributeEquals($AbstractLoggerHandler, '_Logger', $SofortLibAbstractMock);
 	}

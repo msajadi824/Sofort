@@ -1,14 +1,14 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
-use PouyaSoft_ir\Sofort\lib\XmlToArray;
-use PouyaSoft_ir\Sofort\lib\XmlToArrayException;
-use PouyaSoft_ir\Sofort\lib\XmlToArrayNode;
+use PouyaSoft_ir\Sofort\Core\Lib\XmlToArray;
+use PouyaSoft_ir\Sofort\Core\Lib\XmlToArrayException;
+use PouyaSoft_ir\Sofort\Core\Lib\XmlToArrayNode;
 
-class Unit_XmlToArrayTest extends SofortLibTest {
+class XmlToArrayTest extends SofortLibTest {
 	
-	protected $_classToTest = 'XmlToArray';
+	protected $_classToTest = 'PouyaSoft_ir\Sofort\Core\Lib\XmlToArray';
 	
 	private $_maxDepth = 20;
 	
@@ -21,7 +21,7 @@ EOD;
 	
 	
 	public function testConstructNoValidInputException () {
-		$this->setExpectedException('XmlToArrayException');
+		$this->setExpectedException('PouyaSoft_ir\Sofort\Core\Lib\XmlToArrayException');
 		$XmlToArray = new XmlToArray(12);
 		$this->assertTrue($XmlToArray instanceof XmlToArrayException );
 	}
@@ -38,7 +38,7 @@ EOD;
 		$msg = 'text';
 		$this->assertFalse($XmlToArray->log($msg));
 		
-		if (!class_exists('Object')) {
+		if (!class_exists('PouyaSoft_ir\Sofort\UnitTests\SofortObject')) {
 			$msg = 'test';
 			$this->assertEquals(array($msg, 2), $XmlToArray->log($msg));
 			
@@ -95,7 +95,7 @@ EOD;
 		
 		putenv('sofortDebug=true');
 		
-		$this->setExpectedException('XmlToArrayException', 'Unknown error occurred');
+		$this->setExpectedException('PouyaSoft_ir\Sofort\Core\Lib\XmlToArrayException', 'Unknown error occurred');
 		$this->assertTrue(@$default->invoke($XmlToArray, 'test', 'test') instanceof XmlToArrayException);
 	}
 	

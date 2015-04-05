@@ -1,14 +1,14 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
-use PouyaSoft_ir\Sofort\SofortLibHttpSocket;
+use PouyaSoft_ir\Sofort\Core\SofortLibHttpSocket;
 
 if(!defined('SOFORTLIB_VERSION')) {
 	define('SOFORTLIB_VERSION', '2.1.1');
 }
 
-class Unit_SofortLibHttpSocketTest extends SofortLibTest {
+class SofortLibHttpSocketTest extends SofortLibTest {
 
 	protected $_mockPayload ='<?xml version="1.0" encoding="UTF-8" ?>
 <invoices><invoice><transaction>00907-01222-4F86CFEA-7F0B</transaction><status>ERROR</status><errors><error><code>9000</code><message>No invoice transaction found.</message></error></errors></invoice><invoice><transaction>00907-01222-4F86CE5D-B216</transaction><status>ERROR</status><errors><error><code>9000</code><message>No invoice transaction found.</message></error></errors></invoice></invoices>';
@@ -32,7 +32,7 @@ EOT;
 	
 	public function testPost () {
 		$MockPost = $this->getMock(
-			'SofortLibHttpSocket',
+			'PouyaSoft_ir\Sofort\Core\SofortLibHttpSocket',
 			array('_socketRequest'),
 			array(self::$testapi_url, 'gzip', 'http://www.sofort.com')
 		);

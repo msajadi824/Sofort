@@ -1,13 +1,13 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
-use PouyaSoft_ir\Sofort\payment\Sofortueberweisung;
-use PouyaSoft_ir\Sofort\XmlDataHandler;
+use PouyaSoft_ir\Sofort\Core\XmlDataHandler;
+use PouyaSoft_ir\Sofort\Payment\Sofortueberweisung;
 
-class Unit_SofortLibSofortueberweisungTest extends SofortLibTest {
+class SofortLibSofortueberweisungTest extends SofortLibTest {
 
-	protected $_classToTest = 'Sofortueberweisung';
+	protected $_classToTest = 'PouyaSoft_ir\Sofort\Payment\Sofortueberweisung';
 	
 	private $_responseErrors = array (
 		'errors' => array(
@@ -344,7 +344,7 @@ class Unit_SofortLibSofortueberweisungTest extends SofortLibTest {
 		$XmlDataHandler = new XmlDataHandler(self::$configkey);
 		
 		//mock http
-		$http = $this->getMock('SofortLibHttp', array('post'), array(self::$testapi_url));
+		$http = $this->getMock('PouyaSoft_ir\Sofort\Core\SofortLibHttp', array('post'), array(self::$testapi_url));
 		$http->expects($this->any())->method('post')->will($this->returnArgument(0));
 		$XmlDataHandler->setConnection($http);
 		

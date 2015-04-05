@@ -1,6 +1,6 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
 abstract class SofortLibTest extends \PHPUnit_Framework_TestCase {
 

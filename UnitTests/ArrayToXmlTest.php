@@ -1,17 +1,17 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
-use PouyaSoft_ir\Sofort\elements\SofortTag;
-use PouyaSoft_ir\Sofort\elements\SofortText;
-use PouyaSoft_ir\Sofort\lib\ArrayToXml;
+use PouyaSoft_ir\Sofort\Core\Lib\ArrayToXml;
+use PouyaSoft_ir\Sofort\Core\Lib\Elements\SofortTag;
+use PouyaSoft_ir\Sofort\Core\Lib\Elements\SofortText;
 
-class Unit_ArrayToXmlTest extends SofortLibTest {
+class ArrayToXmlTest extends SofortLibTest {
 	
-	protected $_classToTest = 'ArrayToXml';
+	protected $_classToTest = 'PouyaSoft_ir\Sofort\Core\Lib\ArrayToXml';
 	
 	public function testCheckDepth () {
-		$this->setExpectedException('ArrayToXmlException');
+		$this->setExpectedException('PouyaSoft_ir\Sofort\Core\Lib\ArrayToXmlException');
 		$ArrayToXml = new ArrayToXml(array(array(1)));
 		$checkDepth = self::_getMethod('_checkDepth', $this->_classToTest);
 		$checkDepth->invoke($ArrayToXml, array(11));
@@ -29,13 +29,13 @@ class Unit_ArrayToXmlTest extends SofortLibTest {
 	
 	
 	public function testConstructInputSizeException () {
-		$this->setExpectedException('ArrayToXmlException');
+		$this->setExpectedException('PouyaSoft_ir\Sofort\Core\Lib\ArrayToXmlException');
 		$ArrayToXml = new ArrayToXml(array(1,2));
 	}
 	
 	
 	public function testConstructMaxDepthException () {
-		$this->setExpectedException('ArrayToXmlException');
+		$this->setExpectedException('PouyaSoft_ir\Sofort\Core\Lib\ArrayToXmlException');
 		$ArrayToXml = new ArrayToXml(array(1), 55);
 	}
 	

@@ -1,12 +1,12 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
-use PouyaSoft_ir\Sofort\SofortLibTransactionData;
+use PouyaSoft_ir\Sofort\Core\SofortLibTransactionData;
 
-class Unit_SofortLibTransactionDataTest extends SofortLibTest {
+class SofortLibTransactionDataTest extends SofortLibTest {
 	
-	protected $_classToTest = 'SofortLibTransactionData';
+	protected $_classToTest = 'PouyaSoft_ir\Sofort\Core\SofortLibTransactionData';
 	
 	private $_xml_parse_test_empty = array();
 	

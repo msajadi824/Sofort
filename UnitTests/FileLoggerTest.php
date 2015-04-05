@@ -1,10 +1,10 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
-use PouyaSoft_ir\Sofort\FileLogger;
+use PouyaSoft_ir\Sofort\Core\FileLogger;
 
-class Unit_FileLoggerTest extends \PHPUnit_Framework_TestCase {
+class FileLoggerTest extends \PHPUnit_Framework_TestCase {
 	
 	public function testConstruct() {
 		$SofortLibLogger = new FileLogger();
@@ -15,7 +15,7 @@ class Unit_FileLoggerTest extends \PHPUnit_Framework_TestCase {
 	
 	
 	public function testLog() {
-		$stub = $this->getMock('fileLogger', array('_log'));
+		$stub = $this->getMock('PouyaSoft_ir\Sofort\Core\FileLogger', array('_log'));
 		$stub->expects($this->at(0))->method('_log')->with('log')->will($this->returnValue('log'));
 		$this->assertEquals('log', $stub->log('log'));
 		
@@ -55,13 +55,13 @@ class Unit_FileLoggerTest extends \PHPUnit_Framework_TestCase {
 	
 	
 	public function testLogWriting() {
-		$SofortLibLogger = new fileLogger();
+		$SofortLibLogger = new FileLogger();
 		$this->assertTrue($SofortLibLogger->log('test', 'log'));
 	}
 	
 	
 	public function testSetLogfilePath() {
-		$SofortLibLogger = new fileLogger('wusel');
+		$SofortLibLogger = new FileLogger('wusel');
 		$this->assertAttributeEquals('wusel', '_logfilePath', $SofortLibLogger);
 		
 		$SofortLibLogger->setLogfilePath('test');

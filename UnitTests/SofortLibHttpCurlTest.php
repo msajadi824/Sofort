@@ -1,14 +1,12 @@
 <?php
 
-namespace PouyaSoft_ir\Sofort\unittests;
+namespace PouyaSoft_ir\Sofort\UnitTests;
 
-use PouyaSoft_ir\Sofort\SofortLibHttpCurl;
-
-class Unit_SofortLibHttpCurlTest extends SofortLibTest {
+class SofortLibHttpCurlTest extends SofortLibTest {
 
 	public function testPost () {
 		$MockPost = $this->getMock(
-			'SofortLibHttpCurl',
+			'PouyaSoft_ir\Sofort\Core\SofortLibHttpCurl',
 			array('_curlRequest'),
 			array('http://www.sofort.com', 'gzip', 'http://www.sofort.com')
 		);

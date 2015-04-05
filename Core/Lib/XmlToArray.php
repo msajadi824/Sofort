@@ -102,7 +102,7 @@ class XmlToArray {
 	 * @return array|bool
 	 */
 	public function log($msg, $type = 2) {
-		if (class_exists('Object')) {
+		if (class_exists('PouyaSoft_ir\Sofort\UnitTests\SofortObject')) {
 			!($this->_Object instanceof SofortObject) && $this->_Object = new SofortObject();
 			
 			return $this->_Object->log($msg, $type);
