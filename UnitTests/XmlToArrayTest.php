@@ -35,16 +35,12 @@ EOD;
 	
 	public function testLog () {
 		$XmlToArray = new XmlToArray($this->_xml, $this->_maxDepth);
-		$msg = 'text';
-		$this->assertFalse($XmlToArray->log($msg));
-		
-		if (!class_exists('PouyaSoft_ir\Sofort\UnitTests\SofortObject')) {
-			$msg = 'test';
-			$this->assertEquals(array($msg, 2), $XmlToArray->log($msg));
-			
-			$type = 1;
-			$this->assertEquals(array($msg, $type), $XmlToArray->log($msg, $type));
-		}
+
+		$msg = 'test';
+		$this->assertEquals(array($msg, 2), $XmlToArray->log($msg));
+
+		$type = 1;
+		$this->assertEquals(array($msg, $type), $XmlToArray->log($msg, $type));
 	}
 	
 	
